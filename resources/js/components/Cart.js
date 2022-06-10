@@ -51,6 +51,7 @@ const Cart = () => {
                                         return item;
                                     });
                                     setCart(newCart);
+                                    localStorage.setItem("cart", JSON.stringify(newCart));
                                 }}
                                 style={{ maxWidth: "5rem" }}
                             />
